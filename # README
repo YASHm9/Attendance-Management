@@ -1,4 +1,4 @@
-Attendance Management System
+#Attendance Management System
 This project is a simple web-based Attendance Management System built using HTML, CSS, and JavaScript. It allows users to record and manage attendance for students. The system provides a user-friendly interface for entering student names and marking their attendance as present or absent.
 
 Features
