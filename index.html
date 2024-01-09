@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Attendance Management System</title>
+</head>
+<body>
+    <div class="container animate__animated animate__bounce">
+        <h1 class="title">Attendance Management System</h1>
+        <form id="attendanceForm" class="animate__animated animate__fadeIn">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" required>
+
+            <label>Attendance Status:</label>
+            <div id="attendanceStatus">
+                <input type="radio" id="present" name="attendance" value="Present" required>
+                <label for="present">Present</label>
+                
+                <input type="radio" id="absent" name="attendance" value="Absent" required>
+                <label for="absent">Absent</label>
+            </div>
+
+            <button type="button" onclick="submitAttendance()" class="submit-button animate__animated animate__fadeIn">Submit Attendance</button>
+        </form>
+
+        <div id="attendanceList" class="animate__animated animate__fadeIn">
+            <h2>Attendance List</h2>
+            <ul id="list" class="animate__animated animate__fadeIn"></ul>
+        </div>
+    </div>
+
+    <button type="button" onclick="clearAttendanceList()" class="clear-button animate__animated animate__fadeIn">Clear Attendance List</button>
+    
+    <button type="button" onclick="saveAttendanceList()" class="save-button animate__animated animate__fadeIn">Save Attendance List</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
